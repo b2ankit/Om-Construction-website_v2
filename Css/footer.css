@@ -1,0 +1,221 @@
+.footer {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    flex-direction: row;
+    padding: 50px;
+    color: #fff;
+    background:linear-gradient(rgba(15, 15, 15, 0.95),rgba(15,15,15,0.95));
+}
+        
+.footer > * {
+    flex:  1 100%;
+}
+        
+.l-footer {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.l-footer h3{
+    color:  #aa0039;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+         
+        
+.l-footer h3 span{
+    color:  orange;
+}
+
+.l-footer .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+}
+         
+.l-footer .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+         
+.l-footer .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+        
+        
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+        
+.footer li {
+    line-height: 2em;
+}
+        
+.footer a {
+    text-decoration: none;
+}
+        
+.r-footer {
+    display: flex;
+    flex-flow: row wrap;
+}
+        
+.r-footer > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+        
+.box a {
+    color: white;
+}
+        
+.h-box {
+    column-count: 1;
+    column-gap: 4em;
+}
+        
+.b-footer {
+    text-align: center;
+    color:white;
+    padding-top: 20px;
+}
+        
+.l-footer p {
+    padding-right: 20%;
+    color: white;
+}   
+
+.r-footer .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+         
+.r-footer .footer-icons{
+    margin-top: 25px;
+}
+
+.r-footer .footer-company-info span{
+    display: block;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.r-footer .footer-info i{
+    font-size: 24px;
+    padding: 10px;
+}
+
+.r-footer .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+         
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+        
+        @media screen and (min-width: 600px) {
+        .r-footer > * {
+        flex: 1;
+        }
+        
+        .features {
+        flex-grow: 2;
+        }
+        
+        .l-footer {
+        flex: 1 0px;
+        }
+        
+        .r-footer {
+        flex: 2 0px;
+        }
+
+        
+
+        }
+        
+    @media screen and (max-width: 600px) {
+        .r-footer .footer-info i{
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        .r-footer .footer-info li span{
+            font-size: 14px;
+            /* margin-top:  5px; */
+        }
+
+        .box .footer-company-about span{
+            margin-top: 20px;
+        }
+
+        #about-icon{
+            font-size: 14px;
+        }
+
+    }
+ 
+     
+     
+    @media (max-width: 880px) {
+     
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+     
+        .footer-distributed .footer-center i{
+            margin-left: 0;
+        }
+
+        .r-footer .footer-info i{
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        .r-footer .footer-info li span{
+            font-size: 14px;
+            /* margin-top:  5px; */
+        }
+
+        .box .footer-company-about span{
+            margin-top: 20px;
+        }
+
+        #about-icon{
+            font-size: 14px;
+        }
+       
+    }
+
+    @media (max-width: 1050px) {
+        .footer {
+            flex-direction: column; 
+        }
+
+    }

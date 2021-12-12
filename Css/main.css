@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/*css for header*/
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../myimages/img1.jpg");
+    height: 95vh; 
+    position: relative;
+    opacity: 0.95;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0; 
+    z-index:10;
+}
+
+.row{
+    max-width: 1550px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height:0px;
+    clear: both; 
+}
+.logo{
+    height: 110px;
+    width: auto;
+    float: left;
+    margin-top: -10px;
+}
+.main-nav{ 
+    float: right;
+    margin-top: 40px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid  #bf55ec;
+}
+
+.main-content-header{
+    width: 1300px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-content-header h1{
+    color: #fff;
+    font-size: 240%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+    font-weight:bolder;
+}
+.colorchange{
+    animation: colorchanged 6s infinite;
+}
+@keyframes colorchanged{
+    0%{color:rgb(255, 0, 0);}
+    25%{color:#bf55ec;}
+    50%{color: rgb(0, 238, 255);}
+    100%{color:rgb(7, 134, 7);};
+}
+
+.mobile-icon{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-content-header{
+        width: 100%;
+        padding: 0 3%;
+        margin-left: 2%;
+    }
+    
+  }
+  @media only screen and (max-width: 998px) {
+    .main-content-header h1{
+        font-size: 200%;
+    }
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .main-content-header h1{
+        font-size: 180%;
+    }
+    .main-nav{
+        display:none;
+    }
+    .mobile-icon{
+        display: block;
+        color: white;
+        float: right;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    .main-nav{
+        float: left;
+        padding-top: 20px;
+        padding-left: 20%;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+        margin-left: 0%;
+    }
+    .logo{
+        height: 100px;
+        width: auto;
+        float: left;
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+    header{
+    background-size:cover;
+    background-color: rgb(15, 29, 34);
+    height: 120vh; 
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .main-content-header h1{
+        font-size: 180%;
+        text-align:center;
+        font-weight: bold;
+    }
+
+    .main-content-header{
+       
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    body{
+        width:100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+.about-box2{
+    width: 120%;
+    height: 200px;
+    position: relative;
+    overflow-y:scroll; 
+    margin-left: 10%;
+    margin-top: -30px;
+}
+.about-container .about-box2 p{
+    font-size: 120%;
+    color: white;
+    padding-top: 0px;
+    text-align:justify;
+    font-family: 'Flamenco', cursive;
+}
+.about-box2::-webkit-scrollbar {
+    display: none;/*chorme and Safari*/
+}
+.about-box2 {
+        -ms-overflow-style: none;  /*IE 10+*/
+        scrollbar-width: none;  /* Firefox*/
+       }
+          
+}
+/*Stricy css is started*/
+.sticky {
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    background-color: rgba(5, 5, 5, 0.863);
+    position: fixed;
+    z-index:1;
+}
+
+#navbar{
+    overflow: hidden;
+}
+/*Css of about is started*/
+.about{
+    /*background: rgba(18, 18, 19, 0.863);*/
+    background:linear-gradient(rgba(0, 0, 0, 0.95),rgba(0,0,0,0.95));
+    
+    height: 80vh; 
+    margin:0px;
+    padding-bottom: 100px;
+}
+.about h3{
+    text-align:center;
+    color:#fff;
+    font-size:220%;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding: 50px 0;
+
+}
+.about-container{
+    width:100%;
+   /* background: #0facf5;*/
+    height:80%;
+    padding:15%,0;
+}
+.about-box1{
+    width:30%;
+    height:100%;
+    /*background: #0ffc99;*/
+    margin-left: 5%;
+    margin-right: 0%;
+    float:left;
+}
+.about-box1 .img1{
+    position: relative;
+    width:75%;
+    height:auto;
+    margin-top: 100px;
+}
+.about-box2{
+    width:60%;
+    height:100%;
+   /* background: #0ffc99;*/
+    margin-left:0;
+    float:left;
+}
+.about-box2 blockquote p{
+    font-size: 1.5em;
+    color: white;
+    position: relative;
+    padding-top: 80px;
+    text-align:justify;
+   
+}
+.about-box2 blockquote p:before{
+    content:"\201C";
+    font-weight: bold;
+    position: absolute;
+    font-size: 80px;
+    color:whitesmoke;
+    top:-0.2em;
+    left:-0.6em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.about-box2 blockquote p:after{
+    content:"\201D";
+    font-weight: bold;
+    font-size: 80px;
+    color:whitesmoke;
+    position: absolute;
+    bottom:-1.1em;
+    right:0.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/*Css for Events is started*/
+.events{
+    /*background: #272727;*/
+    background:linear-gradient(rgba(0, 0, 0, 0.95),rgba(0,0,0,0.95));
+    height: auto; 
+    margin:0px; 
+    padding-bottom: 50px;
+    
+}
+.events .events-head h3{
+    text-align:center;
+    color:#fff;
+    font-size:220%;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding-top: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.xop-section {
+	max-width:100%;
+	margin:0 auto;
+	padding:2% 2%;
+}
+
+.xop-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.xop-grid:after {
+	clear: both;
+}
+
+.xop-grid:after,
+.xop-box:before {
+	content: '';
+    display: table;
+}
+
+.xop-grid li {
+	width: 320px;
+	height: 400px;
+	display: inline-block;
+	margin: 50px;
+}
+@media only screen and (max-width: 1150px){
+    .xop-grid li {
+        width: 320px;
+        height: 400px;
+        display: inline-block;
+        margin: 20px;
+    }
+
+}
+.xop-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+}
+
+.xop-box:hover {
+	transform: scale(1.05); 
+}
+
+.xop-img-1 { 
+ background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.60), 
+      rgba(0, 0, 0, 0.60)
+    ),
+    /* bottom, image */
+    url(../myimages/nuvoco.png);
+}
+
+.xop-img-2 { 
+ background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.60), 
+      rgba(0, 0, 0, 0.40)
+    ),
+    /* bottom, image */
+    url(../myimages/ultratech.jpg);
+}
+
+.xop-img-4 { 
+ background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.60), 
+      rgba(0, 0, 0, 0.40)
+    ),
+    /* bottom, image */
+    url(../myimages/tata1.png);
+}
+
+.xop-img-3 { 
+ background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.60), 
+      rgba(0, 0, 0, 0.60)
+    ),
+    /* bottom, image */
+    url(../myimages/shree1.jpg);
+}
+
+.xop-img-5 { 
+    background: 
+       linear-gradient(
+         rgba(0, 0, 0, 0.60), 
+         rgba(0, 0, 0, 0.60)
+       ),
+       /* bottom, image */
+       url(../myimages/magadh.jpeg);
+   }
+.xop-info {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+}
+
+.xop-info h3 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+	color: #fff;
+	font-size: 35px;
+	margin: 10px 20px;
+	padding: 80px 0 0 0;
+	line-height:1.5;
+}
+
+.xop-info p {
+    font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	padding: 4px 5px;
+	margin: 0 30px;
+	font-size: 17px;
+	line-height:2;
+}
+
+
+
+
+
+/*Css for Core Memebre is statred*/
+.core-member{
+    /*background: rgba(18, 18, 19, 0.863);*/
+    background:linear-gradient(rgba(0, 0, 0, 0.95),rgba(0,0,0,0.95));
+    height: auto; 
+    margin:0px;
+    padding-bottom: 60px;
+}
+.core-member h3{
+    text-align:center;
+    color:#fff;
+    font-size:220%;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.core-member .core-box{ 
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    flex-direction: row;
+}
+  
+.core-member .core-box .card-wrapper {
+    width: 400px;
+    height: 500px;
+    position: relative;
+  }
+  
+  .core-member .core-box .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+    
+  .core-member .core-box .card-image {
+      position: absolute;
+      top: -20px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-color: #000;
+      transition: .5s;
+    }
+    
+    .core-member .core-box .card-image:hover img {
+      opacity: 0.4;
+      transition: .5s;
+    }
+  
+.core-member .core-box .card:hover .card-image {
+    transform: translateY(-70px);
+    transition: all .9s;
+  }
+
+.core-member .core-box .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    padding: 10px;
+  }
+  
+.core-member .core-box .details h2 {
+      margin: 30px 0;
+      padding: 0;
+      text-align: center;
+    }
+.core-member .core-box .details  .job-title {
+          font-size: 1rem;
+          line-height: 2.5rem;
+          color: #333;
+          font-weight: 300;
+    }
+  
+
