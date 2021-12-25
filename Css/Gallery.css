@@ -144,7 +144,7 @@ header{
     header{
     background-size:cover;
     background-color: rgb(15, 29, 34);
-    height: 70vh; 
+    height: 20vh; 
     }
   }
   @media only screen and (max-width: 500px){
